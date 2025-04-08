@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 960px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.header .tagline {
+    font-style: italic;
+    color: #777;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#img-caption {
+    margin-top: 10px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.bio-section h2,
+.achievements-section h2,
+.quotes-section h2,
+.learn-more-section h3 {
+    color: #007bff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.bio-section p {
+    margin-bottom: 1rem;
+}
+
+.achievements-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.achievements-section li {
+    margin-bottom: 0.5rem;
+}
+
+.quotes-section blockquote {
+    background-color: #eee;
+    padding: 1rem;
+    border-left: 5px solid #007bff;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+.quotes-section cite {
+    display: block;
+    text-align: right;
+    color: #777;
+    font-style: normal;
+}
+
+.learn-more-section {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#tribute-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    color: #777;
+    border-top: 1px solid #ddd;
+}

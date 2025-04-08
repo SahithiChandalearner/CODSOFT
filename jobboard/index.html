@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Job Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Job Board</h1>
+        <input type="text" id="search-input" placeholder="Search jobs...">
+        <button onclick="searchJobs()">Search</button>
+    </header>
+
+    <main id="job-listings">
+        </main>
+
+    <div id="job-detail" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeJobDetail()">&times;</span>
+            <h2 id="job-title"></h2>
+            <p id="job-company"></p>
+            <p id="job-location"></p>
+            <p id="job-description"></p>
+            <button onclick="openApplicationForm()">Apply Now</button>
+        </div>
+    </div>
+
+    <div id="application-form" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeApplicationForm()">&times;</span>
+            <h2>Job Application</h2>
+            <form id="apply-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br><br>
+                <label for="resume">Upload Resume (optional):</label>
+                <input type="file" id="resume"><br><br>
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Basic Job Board</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

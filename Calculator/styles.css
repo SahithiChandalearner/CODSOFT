@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: none;
+    background-color: #444;
+    color: white;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+button:active {
+    background-color: #777;
+}
+
+button:last-child {
+    grid-column: span 1; /* Adjust as needed for '=' button */
+}
+
+button:nth-child(1), button:nth-child(2) { /* C and DEL */
+    background-color: #ff9800;
+}
+
+button:nth-child(1):hover, button:nth-child(2):hover {
+    background-color: #f57c00;
+}
+
+button:nth-child(4n) { /* Operators */
+    background-color: #007bff;
+}
+
+button:nth-child(4n):hover {
+    background-color: #0056b3;
+}
+
+button:last-child { /* Equals button */
+    background-color: #28a745;
+}
+
+button:last-child:hover {
+    background-color: #1e7e34;
+}

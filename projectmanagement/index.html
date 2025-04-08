@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Project Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Project Management Tool</h1>
+    </header>
+
+    <main>
+        <section id="project-list">
+            <h2>Projects</h2>
+            <button onclick="openCreateProjectModal()">Create New Project</button>
+            <ul id="projects">
+                </ul>
+        </section>
+
+        <section id="task-list">
+            <h2>Tasks for <span id="current-project-name"></span></h2>
+            <button onclick="openCreateTaskModal()">Add New Task</button>
+            <ul id="tasks">
+                </ul>
+        </section>
+    </main>
+
+    <div id="create-project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeCreateProjectModal()">&times;</span>
+            <h2>Create New Project</h2>
+            <form id="create-project-form">
+                <label for="project-name">Project Name:</label>
+                <input type="text" id="project-name" required><br><br>
+                <button type="submit">Create Project</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="create-task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeCreateTaskModal()">&times;</span>
+            <h2>Add New Task</h2>
+            <form id="create-task-form">
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" required><br><br>
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline"><br><br>
+                <label for="assignee">Assignee:</label>
+                <input type="text" id="assignee"><br><br>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
